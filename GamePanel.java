@@ -1,8 +1,6 @@
 import javax.swing.JPanel;
 import javax.swing.Timer;
-
 import java.awt.event.*;
-import java.security.KeyException;
 import java.awt.*;
 import java.util.Random;
 
@@ -92,7 +90,11 @@ public class GamePanel extends JPanel implements ActionListener {
     }
 
     public void checkApple() {
-
+        if ((x[0] == appleX) && (y[0] == appleY)) {
+            bodyparts++;
+            appleseaten++;
+            newApple();
+        }
     }
 
     public void checkCollisions() {
