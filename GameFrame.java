@@ -6,7 +6,7 @@ public class GameFrame extends JFrame {
         this.setTitle("Snake Game");
         this.setDefaultCloseOperation(3);
         this.setResizable(false);
-        this.setLocationRelativeTo(null);
+        // this.setLocationRelativeTo(null);
         this.pack();
         this.setVisible(true);
     }
